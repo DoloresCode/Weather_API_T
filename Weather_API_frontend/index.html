@@ -11,7 +11,7 @@
     <body>
         <h3>Welcome to my weather app</h3>
         <p>Search for a city and country.</p>
-        <form onsubmit="fetchWeatherInformation()">
+        <form id="myForm">
             <div>
                 <label for="city">City</label>
                 <input type="text" id="city" name="city">
@@ -21,9 +21,28 @@
                 <input type="text" id="country" name="country">
             </div>
             <div>
-                <input type="submit" id="submitBtn" name="submitBtn">
+                <button type="submit">Submit</button>
             </div>
         </form>
+
+        <h4>Result from Search</h4>
+        <div id="result">
+            <p id="locationName"></p>
+            <p id="temperature"></p>
+            <p id="wind"></p>
+            <p id="cloudiness"></p>
+            <p id="pressure"></p>
+            <p id="humidity"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+            <p id="geoCoordinates"></p>
+            <p id="requestedTime"></p>
+            <p id="forecast"></p>
+            
+            
+            
+        </div>
+
         
         <script src="public/js/script.js"></script>
     </body>
