@@ -6,27 +6,33 @@
         <title>Weather app frontend</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="public/css/styles.css">
     </head>
     <body>
-        <h3>Welcome to my weather app</h3>
-        <p>Search for a city and country.</p>
-        <form id="myForm">
-            <div>
-                <label for="city">City</label>
-                <input type="text" id="city" name="city">
-            </div>
-            <div>
-                <label for="city">Country</label>
-                <input type="text" id="country" name="country">
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+        <header>
+            <h1>Welcome to my weather app</h1>
+            <h2>Weather forecast</h2>
+            <p>Enter a city and country to get the weather forecast</p>  
+        <header>
 
-        <h4>Result from Search</h4>
-        <div id="result">
+        <section>
+            <form id="myForm">
+                <div class="input-group-weather">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Enter city name" />
+                </div>
+                <div>
+                    <label for="city">Country</label>
+                    <input type="text" id="country" name="country" placeholder="Enter country name" />
+                </div>
+                <div>
+                    <button type="submit">Get Weather</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="search-results">
+            <h2>Result from Search</h2>
             <p id="locationName"></p>
             <p id="temperature"></p>
             <p id="wind"></p>
@@ -38,12 +44,8 @@
             <p id="geoCoordinates"></p>
             <p id="requestedTime"></p>
             <p id="forecast"></p>
-            
-            
-            
-        </div>
+        </section>
 
-        
         <script src="public/js/script.js"></script>
     </body>
 </html>
