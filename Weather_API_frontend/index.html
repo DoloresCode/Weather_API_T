@@ -7,13 +7,14 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="public/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
     <body>
         <header>
             <h1>Welcome to my weather app</h1>
             <h2>Weather forecast</h2>
             <p>Enter a city and country to get the weather forecast</p>  
-        <header>
+        </header>
 
         <section>
             <form id="myForm">
@@ -21,8 +22,8 @@
                     <label for="city">City</label>
                     <input type="text" id="city" name="city" placeholder="Enter city name" />
                 </div>
-                <div>
-                    <label for="city">Country</label>
+                <div class="input-group-weather">
+                    <label for="country">Country</label>
                     <input type="text" id="country" name="country" placeholder="Enter country name" />
                 </div>
                 <div>
@@ -33,17 +34,21 @@
 
         <section id="search-results">
             <h2>Result from Search</h2>
-            <p id="locationName"></p>
-            <p id="temperature"></p>
-            <p id="wind"></p>
-            <p id="cloudiness"></p>
-            <p id="pressure"></p>
-            <p id="humidity"></p>
-            <p id="sunrise"></p>
-            <p id="sunset"></p>
-            <p id="geoCoordinates"></p>
-            <p id="requestedTime"></p>
-            <p id="forecast"></p>
+            <div id="city-temp-container">
+                <p id="locationName"></p>
+                <p id="temperature"></p>
+            </div>
+            <div id="other-info-container">
+                <p id="wind"></p>
+                <p id="cloudiness"></p>
+                <p id="pressure"></p>
+                <p id="humidity"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+                <p id="geoCoordinates"></p>
+                <p id="requestedTime"></p>
+                <p id="forecast"></p>
+            </div>
         </section>
 
         <script src="public/js/script.js"></script>

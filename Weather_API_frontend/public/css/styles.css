@@ -11,3 +11,33 @@ header {
     color: white;
     padding: 1em 0;
 }
+
+section {
+    margin: 2em 5%;
+}
+
+.input-group-weather {
+    margin-bottom: 1em;
+}
+
+/* labels at the top of teh input box */
+label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: .5em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #031120;
+}
+
+
+
