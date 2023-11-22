@@ -56,7 +56,7 @@ Navigate to the Frontend directory
 cd path/to/Weather_API_frontend
 
 6. Open in Browser
-Open the index.html file in a web browser to view the frontend.
+Open the index.html file in a web browser to view the frontend. (click anywhere in the HTML file in the editor and do command+L on MAC, the window will open on the browser)
 
 ## Ameliorations
 
