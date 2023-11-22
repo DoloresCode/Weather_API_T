@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     text-align: center;
+    
 }
 
 header {
@@ -20,7 +21,7 @@ section {
     margin-bottom: 1em;
 }
 
-/* labels at the top of teh input box */
+/* labels at the top of the input box */
 label {
     display: block;
     margin-bottom: .5em;
@@ -39,5 +40,50 @@ button:hover {
     background-color: #031120;
 }
 
+#city-temp-container {
+    display: block; 
+    margin: 2em auto; /* I centrilize it*/
+    padding: 1em;
+    background-color: #e8f0fe; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 60%; 
+}
 
+#city-temp-container p {
+    font-size: 1.2em; 
+    font-weight: bold;
+    color: #031120; 
+    margin: 0.5em 0;
+}
+
+/* Styling for Other Info */
+#other-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* I create two columns */
+    gap: 20px; /* Space between them */
+    margin: 2em auto;
+    max-width: 80%; 
+}
+
+#other-info-container p {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove margin from paragraph */
+    text-align: left;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #city-temp-container,
+    #other-info-container {
+        max-width: 95%;
+    }
+
+    #other-info-container {
+        grid-template-columns: 1fr; /* it change to a single column on a smaller screen */
+    }
+}
 
