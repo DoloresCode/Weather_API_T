@@ -9,6 +9,12 @@ This Weather App provides real-time weather information using a Node.js backend 
 - Real-time weather updates
 - User-friendly interface
 
+## Images
+
+<img width="423" alt="Screenshot Weather_API_T_1" src="https://github.com/DoloresCode/Weather_API_T/assets/117631390/4d68f594-0b5f-465b-bb62-014960c060d4">
+
+<img width="830" alt="Screenshot 2023-11-25 at 18 18 13" src="https://github.com/DoloresCode/Weather_API_T/assets/117631390/4121a014-58cf-4829-a80f-b782edd3ecb7">
+
 ## Dependencies
 
 - Node.js
