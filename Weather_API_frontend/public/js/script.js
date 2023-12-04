@@ -3,6 +3,8 @@ async function fetchWeatherInformation (event) {
     event.preventDefault();
     const cityValue = document.getElementById('city').value;
     const countryValue = document.getElementById('country').value;
+
+    // Get weather information from the backend
     const response = await fetch(`http://localhost:4000/weather?city=${cityValue}&country=${countryValue}`);
     const result = await response.json();
     
@@ -16,7 +18,6 @@ async function fetchWeatherInformation (event) {
     document.getElementById('sunset').innerHTML = `<i class="fas fa-moon"></i> Sunset: ${result.sunset}`;
     document.getElementById('geoCoordinates').innerHTML = `<i class="fas fa-globe"></i> Geo Coordinates: ${result.geo_coordinates}`;
     document.getElementById('requestedTime').innerHTML = `<i class="fas fa-clock"></i> Requested Time: ${result.requested_time}`;
-    document.getElementById('forecast').innerHTML = `<i class="fas fa-calendar-alt"></i> Forecast: ${result.forecast}`;
 
     console.log(result);
 }
